@@ -84,6 +84,61 @@
                         <h1 class="about-adjective-2">Team Player</h1>
                         <h1 class="about-adjective-3">Creative</h1>
                     </div>
+                    <div class="skills">
+                        Technical Skills
+                        <div class="skills-wrapper">
+                            <ul class="skills-list">
+                                <li>Java</li>
+                                <li>JavaScript ES6</li>
+                                <li>CSS/SCSS</li>
+                                <li>React</li>
+                                <li>NoSQL</li>
+                                <li>Version Control</li>
+                            </ul>
+                            <div class="vl"></div>
+                            <ul class="skills-list-2">
+                                <li>Node.js</li>
+                                <li>Agile/SCRUM</li>
+                                <li>Restful Services</li>
+                                <li>SDLC</li>
+                                <li>Android Studio</li>
+                                <li>Unity</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 
+                    <div class="skills">
+                        Technical Skills
+                        <div class="skills-wrapper">
+                            <table class="skills-list">
+                                <tr>
+                                    <td>Java</td>
+                                    <td>JavaScript ES6</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript ES6</td>
+                                    <td>Java</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS/SCSS</td>
+                                    <td>Java</td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                    <td>Java</td>
+                                </tr>
+
+                                <tr>
+                                    <td>NoSQL</td>
+                                    <td>Java</td>
+                                </tr>
+                                <tr>
+                                    <td>Version Control</td>
+                                    <td>Java</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -99,7 +154,7 @@
                 <div class="project">
                     <div class="project-text">
                         <h2 class="project-name">Pokedex React App</h2>
-                        <h4 class="project-technologies">React/ JSX/ CSS</h4>
+                        <h4 class="project-technologies">React | JSX | CSS</h4>
                     </div>
                     <img src="images/ReactPokedexCover.PNG" class="project-img" alt="project">
                     <a href="https://youtu.be/2WrPR7ygUxA" class="project-link" target="_blank">Go to Video</a>
@@ -108,7 +163,7 @@
                 <div class="project">
                     <div class="project-text">
                         <h2 class="project-name">Restful API</h2>
-                        <h4 class="project-technologies">Node.js/ Express/ MongoDB</h4>
+                        <h4 class="project-technologies">Node.js | Express | MongoDB</h4>
                     </div>
                     <img src="images/RestAPICover.JPG" class="project-img" alt="Restful API">
                     <a href="https://youtu.be/fPv5oi1W1VI" class="project-link" target="_blank">Go to Video</a>
@@ -117,7 +172,7 @@
                 <div class="project">
                     <div class="project-text">
                         <h2 class="project-name">Unity Game Repossession</h2>
-                        <h4 class="project-technologies">Unity/ C#/ OOP</h4>
+                        <h4 class="project-technologies">Unity | C# | Design</h4>
                     </div>
                     <img src="images/ReposessionCover.png" class="project-img" alt="project">
                     <a href="https://youtu.be/FK84Zv_GxYI" class="project-link" target="_blank">Go to Video</a>
@@ -126,10 +181,10 @@
                 <div class="project">
                     <div class="project-text">
                         <h2 class="project-name">Future Project</h2>
-                        <h4 class="project-technologies">HTML/ CSS/ JS</h4>
+                        <h4 class="project-technologies">React | Firebase</h4>
                     </div>
-                    <img src="images/project1.jpg" class="project-img" alt="project">
-                    <a href="#" class="project-link" target="_blank">Go to Video</a>
+                    <img src="images/firebaseCover.jpg" class="project-img" alt="project">
+                    <a href="#" class="project-link" target="_blank">Video to Come</a>
                 </div>
 
                 <div class="project">
@@ -138,7 +193,7 @@
                         <h4 class="project-technologies">HTML/ CSS/ JS</h4>
                     </div>
                     <img src="images/project1.jpg" class="project-img" alt="React Project">
-                    <a href="#" class="project-link" target="_blank">Go to Video</a>
+                    <a href="#" class="project-link" target="_blank">Video to Come</a>
                 </div>
 
                 <div class="project">
@@ -147,7 +202,7 @@
                         <h4 class="project-technologies">HTML/ CSS/ JS</h4>
                     </div>
                     <img src="images/project1.jpg" class="project-img" alt="project">
-                    <a href="#" class="project-link" target="_blank">Go to Video</a>
+                    <a href="#" class="project-link" target="_blank">Video to Come</a>
                 </div>
 
 
@@ -158,12 +213,27 @@
         <!--Section4-->
         <section class="section-4" id="section-4">
             <h1 class="section-heading section-4-heading">Contact</h1>
-            <form name="contact" method="POST" enctype="text/plain" class="contact-form center" netlify>
+            <!-- <form name="contactform" method="POST" enctype="text/plain" class="contact-form center" netlify>
                 <input name="name" type="text" placeholder="Name">
                 <input name="email" type="email" placeholder="Email">
                 <textarea name="message" placeholder="Message"></textarea>
-                <input name="submit" type="submit" value="Submit" class="contact-form-btn">
+                <button name="submit" type="submit" value="Submit" class="contact-form-btn">
+            </form> -->
+            <form name="contactform" method="POST" class="contact-form center" data-netlify="true">
+                <p>
+                    <input type="text" name="name" placeholder="Name" />
+                </p>
+                <p>
+                    <input type="email" name="email" placeholder="Email" />
+                </p>
+                <p>
+                    <textarea name="message" placeholder="Message"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Contact</button>
+                </p>
             </form>
+            <input type="hidden" name="form-name" value="contactform" class="contact-form-btn">
 
         </section>
         <!--Section4 end-->
@@ -175,7 +245,7 @@
                     <i class="fab fa-github-square"></i>
                 </a>
 
-                <a href="#" class="social-media-link">
+                <a href="https://www.youtube.com/channel/UCd2T0Ld_-qPwF1xvgeCSaAw" class="social-media-link">
                     <i class="fab fa-youtube-square"></i>
                 </a>
 

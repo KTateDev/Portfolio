@@ -542,8 +542,9 @@ html {
 }
 
 .projects-wrapper {
-  width: 80%;
+  width: 85%;
   flex-wrap: wrap;
+  padding: 7.5rem 0 10rem 0;
 }
 
 .project {
@@ -557,6 +558,7 @@ html {
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.5s;
+  /* height: 100%; */
 }
 
 .project:hover {
@@ -589,9 +591,10 @@ html {
   color: rgb(25, 150, 0);
 }
 
+
 .project-img {
-  width: 40rem;
-  height: 25rem;
+  width: 42.5rem;
+  height: 27.5rem;
   transition: opacity 0.3s;
 }
 
@@ -605,6 +608,18 @@ html {
   color: #333;
   letter-spacing: 0.1rem;
   border: 0.3rem solid rgb(25, 150, 0);
+  padding: 0 1rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5rem;
+  transition: bottom 0.3s;
+}
+.future-project-link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: 0.3rem solid rgb(150, 0, 0);
   padding: 0 1rem;
   background-color: #fff;
   position: absolute;
@@ -849,6 +864,11 @@ html {
   }
 
 }
+@media (max-width: 550px) {
+  .contact-form input, .contact-form textarea, .contact-form button{
+    width: 47.5rem;
+  }
+}
 
 @media (max-width: 500px) {
   html {
@@ -903,7 +923,6 @@ html {
   top: -10rem;
 }
 
-
 }
 div.social-media{
  padding: 0 0 -1.5rem 0;
@@ -914,7 +933,9 @@ div.social-media{
   .section-2{
     height: 69vh;
   }
-  
+  .contact-form input, .contact-form textarea, .contact-form button{
+    width: 40rem;
+  }
 }
 
 
@@ -949,7 +970,11 @@ div.social-media{
     height: 14.2rem;
     bottom: -11.55rem;
     background-size: contain;
-    
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -965,7 +990,6 @@ div.social-media{
   }
   
   .section-2 .wave-2 {
-    
     height: 14.2rem;
     bottom: -9.9rem;
     background-size: contain;
